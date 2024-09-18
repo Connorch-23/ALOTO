@@ -2,18 +2,24 @@
     margin: auto;
     justify-content: center;
     border: 3px black solid;
-    background-color: #ef766b;
+    background-color: lightblue;
+}
+
+header {
+    display: block;
+    height: 60px;
+    padding: var(--content-padding);
+    box-shadow: 0px 5px 25px var(--shadow-color);
 }
 
 .container button {
-    font-size: 2ch;
-    margin: 1ch .3ch
+    font-size: 1.8ch;
+    margin: 1ch .3ch;
+    background-color: lightblue;
 }
 
 .brand-logo {
     margin-top: 1ch;
-    margin-bottom: -2ch;
+    margin-bottom: -1.8ch;
     margin-right: .3ch;
 }
-
-.menu-icon {}
