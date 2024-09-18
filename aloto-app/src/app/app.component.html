@@ -1,8 +1,19 @@
 <main>
-  <header class="brand-name">
-    <img class="brand-logo" src="assets/aloto-logo/favicon-32x32.png" alt="logo" aria-hidden="true">
+  <header>
+    <div class="container">
+      <button mat-fab extended [matMenuTriggerFor]="menu" aria-label="Menu Icon">
+        <mat-icon class="menu-icon">menu</mat-icon>
+        Menu
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>Item 1</button>
+        <button mat-menu-item>Item 2</button>
+      </mat-menu>
+      <img class="brand-logo" src="assets/aloto-logo/favicon.ico" alt="logo" aria-hidden="true">
+      <button mat-button>Home</button>
+      <button mat-button>Calendar</button>
+      <button mat-button>Photo Gallery</button>
+    </div>
   </header>
-  <section class="content">
-    <router-outlet></router-outlet>
-  </section>
+  <router-outlet></router-outlet>
 </main>
